@@ -15,4 +15,12 @@ Further examination showed that the most important Grad-CAM weights in the 1.5â€
 
 <img src="images/envelop_powerdiff-1.png" alt="Alt text" width="600"/>
 
+## Dependencies
+Python 3.12.6 has been utilized for this project.
+Install the required Python packages using the following command:
+
+```bash
+$ pip install -r requirements.txt
+```
+
 For questions, please contact Sergio Kazatzidis at s.kazatzidis@gmail.com.
