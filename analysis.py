@@ -1714,7 +1714,7 @@ else:
     plt.tight_layout()
     plt.show()
 
-#getting the psd of all windows
+#getting the psd of all test windows (in the paper it is of all the windows; and can be made by changing the loop above to all subjects instead of just test)
 
 def fit_and_return_fooof(freqs, psd, label):
     freq_mask = (freqs >= 1) & (freqs <= 80)
@@ -1796,5 +1796,6 @@ plt.xlim(1, 60)
 plt.ylim(-40)
 plt.savefig("resting_state_psd.pdf", bbox_inches='tight')
 plt.show()
+
 
 
