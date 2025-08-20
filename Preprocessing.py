@@ -361,9 +361,6 @@ def preprocess_and_create_pairs(
 
     return results
 
-
-#
-
 epoched_data = preprocess_and_create_pairs(
     subject_ids,
     pre_processed_data_EC,
@@ -397,25 +394,7 @@ with open("my_raw_eeg_epoched_data_30_inf.pkl", "rb") as f:
     raw_epoched_data = pickle.load(f)
 
 
-x1_train = epoched_data["x1_train"]
-x2_train = epoched_data["x2_train"]
-y_train = epoched_data["y_train"]
 
-x1_val = epoched_data["x1_val"]
-x2_val = epoched_data["x2_val"]
-y_val = epoched_data["y_val"]
-
-x1_test = epoched_data["x1_test"]
-x2_test = epoched_data["x2_test"]
-y_test = epoched_data["y_test"]
-
-index_list_test = epoched_data["index_list_test"]
-
-x1_test_raw = raw_epoched_data["x1_test"]
-x2_test_raw = raw_epoched_data["x2_test"]
-y_test_raw = raw_epoched_data["y_test"]
-
-index_list_test_raw = raw_epoched_data["index_list_test"]
 
 
 
