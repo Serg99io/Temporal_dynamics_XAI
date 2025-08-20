@@ -149,7 +149,7 @@ plt.show()
 
 rho, p_val = spearmanr(time_distances, embedding_distances)
 print(f"Spearman correlation: rho = {rho:.3f}, p = {p_val:.3e}")
-
+#for this you need umap-learn
 import umap.umap_ as umap
 #import matplotlib.pyplot as plt
 
@@ -1796,6 +1796,7 @@ plt.xlim(1, 60)
 plt.ylim(-40)
 plt.savefig("resting_state_psd.pdf", bbox_inches='tight')
 plt.show()
+
 
 
 
